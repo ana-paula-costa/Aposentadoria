@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:fontFamily="sans-serif-black"
-        android:textColor="#458"
+        android:textColor="#156"
         android:textSize="18sp"
         android:backgroundTint="#457"
         android:padding="18dp"
