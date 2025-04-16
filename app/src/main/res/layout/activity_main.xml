@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:id="@+id/genero"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/idade"
+        android:textColor="#548"
+        android:textSize="18sp"
+        android:maxLength="3"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:hint="Digite sua idade"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#458"
+        android:textSize="18sp"
+        android:backgroundTint="#457"
+        android:padding="18dp"
+        android:pointerIcon="hand"
+        android:id="@+id/botao"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/frase"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:backgroundTint="#5517D3"
+        android:padding="18dp"
+        android:pointerIcon="arrow"
+         />
+
+
+
+
+
+</LinearLayout>
