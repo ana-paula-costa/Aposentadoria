@@ -22,12 +22,40 @@ class MainActivity : AppCompatActivity() {
 
         //
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, items)
+
+        //Confuguração do layout
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
-        // Que suro 
+        // Que
         binding.genero.adapter = adapter
+
         binding.botao.setOnClickListener {
-            var idade=binding.idade.text
+
+            val sexo = binding.genero.selectedItem as String
+
+            val idade = binding.idade.text.toString().toLongOrNull()
+
+            val resultado: Long
+            if (idade != null) {
+
+                if(sexo=="Feminino") {
+                    resultado = 62 - idade
+                } else{
+                    resultado = 65 - idade
+                }
+                binding.frase.text=if (resultado>0) {
+                    "Faltam $resultado anos para você se aposentar."
+
+                } else {
+                    "Você já pode se aposentar."
+                }
+
+            }else{
+
+                binding.frase.text="Digite sua idade"
+
+
+            }
 
 
         }
